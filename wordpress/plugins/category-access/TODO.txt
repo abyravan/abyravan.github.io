@@ -1,0 +1,57 @@
+- All Pingbacks to all categories became blocked and didn't show up in my Blog
+	or in Akismet. (Marnem marnem@marnem.de)
+
+- Provide some sort of spreadsheet that will allow the user to quickly see who
+	has access to what categories. (Suggested by pret <zeynep.ozkan@gmail.com>)
+- Show sub-category structure in the options and user profile pages (Suggested
+	by Leho Kraav <leho@dataring.ee>)
+- Provide some easy way to select/deselect all sub-categories from the parent
+	category (Suggested by Leho Kraav <leho@dataring.ee>)
+- Provide role-based access along with Role Manager (Suggested by Leho Kraav
+	<leho@dataring.ee>)
+- Allow the text above the <!--more--> link to be shown, and change the read
+	more link into a login-plus-redirect link. (Feature suggested by Luke
+	Scammell <luke@scammell.co.uk>)
+- An option to allow all visitors to view all pages regardless of category but
+	to limit what categories particular users can edit. (Suggested by David Katz
+	<davidk@slic.com>)
+- Filter inaccessible categories from the "write post" admin page. This
+	requires a hook that Wordpress doesn't have. See
+	http://trac.wordpress.org/ticket/2623. (Suggested by Paul Magnowski
+	<p.magnowski@plum.com.pl>)
+- Provide a way to set default visibility for a category for all users. "Bulk
+	update". (Suggested by Paul Magnowski <p.magnowski@plum.com.pl>)
+- Modify comment RSS feed to hide comments on restricted posts. (Super Ann
+	<tech@superann.com>.) See http://trac.wordpress.org/ticket/2840
+- > > ad: If a person selects categories that they do not have access to
+	> > when editing or writing a post, these categories are removed. If no
+	> > categories remain, the post is put into the uncategorized category and
+	> > not published.
+  > 
+	> i let people select any category they want when writing a post. ie, if
+	> it's YOUR post, you can see it regardless of category access (just like
+	> admin can since version 0.5).  in post_should_be_hidden i added at the
+	> beginning
+
+  > global $current_user
+  > 
+  > if ($current_user->id == $post->post_author)
+  >   return false;
+
+  Are you sure this doesn't still modify the categories as described above?
+
+  It seems to me we want a configuration option choice like:
+
+    _ Prevent users from posting into categories for which they do not have
+    access. (Remove restricted categories from the post, and save the post 
+    as a draft if there are no categories remaining.)
+
+    _ Allow users to post into categories for which they do not have access.
+    (Users will always be able to see their own posts.)
+
+  What do you think?
+- Filter posts from get_archives calls like:
+  <?php get_archives('postbypost', 10); ?>
+  I'm waiting on a bugfix: http://trac.wordpress.org/ticket/1368
+  (Thanks to Francois Aleta <aleta@yellowpipe.com> for the bug report.)
+	This is fixed in WP 2.2

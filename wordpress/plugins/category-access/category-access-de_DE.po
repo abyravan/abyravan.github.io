@@ -1,0 +1,132 @@
+# translation of de_DE.po to
+# Copyright (C) 2007 Free Software Foundation, Inc.
+#
+# Michael Rothfischer <m.rothfischer@kinetiqa.de>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: de_DE\n"
+"PO-Revision-Date: 2007-04-19 17:31+0100\n"
+"Last-Translator: Kinetiqa GmbH\n"
+"Language-Team: -\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"POT-Creation-Date: \n"
+
+#: category-access.php
+msgid "Category Access"
+msgstr "Kategorie Zugriff"
+
+#: category-access.php
+msgid "Backtrace:"
+msgstr "Ablaufverfolgung:"
+
+#: category-access.php
+msgid "Sorry, you do not have sufficient privileges to view this post."
+msgstr "Sie haben nicht das Recht, diesen Beitrag zu lesen!"
+
+#: category-access-options.php
+msgid "Category Access Options"
+msgstr "Kategorie Zugriff Einstellungen"
+
+#: category-access-options.php
+msgid "Category Access for:"
+msgstr "Kategorie Zugriff für:"
+
+#: category-access-options.php
+msgid "New Users"
+msgstr "Neu Angemeldete Benutzer/Benutzerinnen"
+
+#: category-access-options.php
+msgid "Set the default visibility of categories for new users below. These values can be set on a user-by-user basis in the edit user page."
+msgstr "Geben Sie hier die Standard-Kategorien für <b>neu angemeldete</b> Benutzer/Benutzerinnen an. Diese Einstellungen können Sie bei jedem/jeder einzelnen Benutzer/Benutzerinnen bei den Benutzeinstellungen ändern."
+
+#: category-access-options.php
+msgid "Anonymous Users"
+msgstr "Nicht Angemeldete Benutzer/Benutzerinnen"
+
+#: category-access-options.php
+msgid "Protected Posts in the Blog"
+msgstr "Geschützte Beiträge im Blog"
+
+#: category-access-options.php
+msgid "Hide entire post."
+msgstr "Verstecke kompletten Beitrag."
+
+#: category-access-options.php
+msgid "Show title, but a private message for the body text."
+msgstr "Zeige den Titel, aber zeige eine kurze Mitteilung anstelle des Textes. "
+
+#: category-access-options.php
+msgid "Show a private message for the title and nothing for the body text."
+msgstr "Zeige eine kurze Mitteilung anstelle des Beitrags."
+
+#: category-access-options.php
+msgid "Show a padlock icon on the private post message."
+msgstr "Zeige ein Schloss-Icon bei der Mitteilung"
+
+#: category-access-options.php
+msgid "Consider a message to be visible if the user can view <em>any</em> of its categories (rather than <em>all</em> of its categories)."
+msgstr "Einen Beitrag zeigen, falls der Benutzer/ die Benutzerin eine oder mehrere (statt alle) seiner Kategorien sehen kann."
+
+#: category-access-options.php
+msgid "Protected Posts in Feeds"
+msgstr "Schütze Beiträge in Feeds."
+
+#: category-access-options.php
+msgid "Users can always see the entire feed in their web browser b"
+msgstr "Benutzer/Benutzerinnen können immer den kompletten Feed in Ihrem/Seinem Webbrowser b sehen"
+
+#: category-access-options.php
+msgid "Show the title and links (but not the summary or content) instead of hiding posts."
+msgstr "Zeige den Titel, nicht aber den Text von geschützen Beiträgen."
+
+#: category-access-options.php
+msgid "The Category List"
+msgstr "Kategorie Liste"
+
+#: category-access-options.php
+msgid "Show private categories."
+msgstr "Zeige beschränkte Kategorien"
+
+#: category-access-options.php
+msgid "Show a padlock icon next to private categories."
+msgstr "Zeige ein Schloss-Icon bei beschränkten Kategorien"
+
+#: category-access-options.php
+msgid "Update Options"
+msgstr "Einstellungen übernehmen"
+
+#: category-access-options.php
+msgid "Reset All Options"
+msgstr "Alle Einstellungen zurücksetzen"
+
+#: category-access-options.php
+msgid "Users can always see the entire feed in their web browser by logging into the blog and checking the <em>Remember me</em> option. This will store a cookie on their computer that will be read by wordpress when the browser requests the feed. However, for feed readers that do not have cookie support, you can set the following option to show the title but not the text of protected posts in your feeds."
+msgstr "Benutzer/Benutzerinnen können immer den kompletten Feed in ihrem Webbrowser sehen, falls sie sich am Weblog anmelden und dabei die Einstellung <b>Angemeldet bleiben</b> gewählt hatten. Dabei wird ein Cookie auf dem Computer des Benutzer/der Benutzerin abgelegt, das Wordpress verarbeiten kann. Falls ein Feed Reader verwendet wird, der keine Cookies unterstützt, können Sie mit der folgenden Einstellung angeben, dass der Titel, nicht aber der Text von geschützten Beiträgen, im Feed angezeigt wird."
+
+#: category-access-options.php
+msgid "The private post message:"
+msgstr "Text der Mitteilung:"
+
+#: category-access-options.php
+msgid "Check all categories"
+msgstr "Alle Kategorien selektieren"
+
+#: category-access-options.php
+msgid "Uncheck all categories"
+msgstr "Alle Kategorien deselektieren"
+
+#: category-access-options.php
+msgid "Set the visibility of categories for users that are not logged in below. Usually this is the same as or more restrictive than the access granted to new users."
+msgstr "Geben Sie hier die Standard-Kategorien für <b>nicht angemeldete</b> Benutzer/Benutzerinnen an. Normalerweise handelt es sich dabei um die gleiche oder um weniger als bei neu angemeldeten Benutzern/Benutzerinnen."
+
+#: category-access-user-edit.php
+msgid "As a category manager, this user can view all categories."
+msgstr "Dieser Benutzer/diese Benutzerin kann Kategorie Zugriffe verwalten und somit alle Kategorien sehen."
+
+#: category-access-user-edit.php
+msgid "The following checked categories are visible to this user."
+msgstr "Der Benutzer/die Benutzerin darf folgende Kategorien sehen."
+

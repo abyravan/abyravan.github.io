@@ -1,0 +1,170 @@
+0.8.2 (Tue Nov 6 2007)
+- Added a workaround for a WordPress bug that was causing the padlock to
+	appear on static pages when a protected category was selected. (Thanks to
+	<gspark@mac.com> for the bug report.)
+- Added WordPress 2.3 support (Thanks to James Wurster <jwurster@comcast.net>
+	for the patch.)
+- Moved the padlock in the category list to after the name.
+- Fixed a bug that was causing problems for people running the German
+	translation. (Thanks to Moritz Mueller <moritz@muella.info> for bugfix.)
+
+0.8.1 (Wed Aug 1 2007)
+- Added "Check all categories" and "Uncheck all categories" buttons to the
+	options and user pages. (Suggested by David Katz <davidk@slic.com>)
+- Fixed a bug where category filtering would sometimes fail, especially for
+	things like RSS fields. (Thanks to Tim Lockwood <tim@lemonbiscuit.co.uk> for
+	the patch.)
+- Fixed a problem where post titles would be protected in situations where
+	they shouldn't be, such as in the dashboard comment list. (Thanks to Joe
+	Church <joe@churchgang.us> for the bug report.)
+- Updated the wp-commentsrss2.php modification in the README for WP 2.2 or
+	newer. (Thanks to Aniesh Joseph <anieshjoseph@gmail.com> for the bug
+	report.)
+- I also fixed a problem in the comments RSS modification documentation where
+	posts would be entirely removed, even if you had enabled "Show the title and
+	links (but not the summary or content) instead of hiding posts."
+- Changed the options page so that it uses Javascript and CSS to show only the
+	visibility options for only the selected class of users. This cleans up the
+	interface and allows for possible future support of roles.
+- When surfing to the permalink for a protected post, the user will now be
+	redirected to the login page if they cannot view the post and are not logged
+	in. Note that after logging in, they may still see an Error 404 if they do
+	not have permissions to view the post. (Thanks for the feature suggestion by
+	Jason Holtslander <jasonh@pacificvalleysiding.com>.)
+- CSS styles are now used for protected titles, posts, categories, and padlock
+	icons.  (Thanks to Tyler Gore <tyler_gore@yahoo.com> for the suggestion.)
+- Fixed a bug where the padlock icon HTML was being inserted into the category
+	link title.
+- Fixed a bug where the previous and next post links would always be
+	protected if the post for the current page was protected.
+
+0.8.0 (Wed Apr 25 2007)
+- Added MySQL 4.0.x compatibility (Thanks to Giorgio A. Schwarz
+	<inbox@idiosuite.com> for the patch.)
+- Set the priority for this plugin to really low, so that other plugins can
+	have a chance to work on comments and such without interference. (Thanks to
+	Ian Beck <ian@onecrayon.com> for the bug report.)
+- Added support for internationalization. The first language is German (Thanks
+	to Michael Rothfischer <m.rothfischer@kinetiqa.de> for the patch.)
+
+0.7.3 (Mon Feb 5 2007)
+- Plugin now works for people whose database table prefix is not the default
+	"wp_". (Thanks to Paul Argoud <paul.argoud@gmail.com> for the bug report.)
+
+0.7.2 (Sun Feb 4 2007)
+- Updated for Wordpress 2.1. It should continue to work for Wordpress 2.0
+- Fixed a bug where pages would sometimes not be shown. (Thanks to Nancy
+	Shoemaker <nancy@shoemakergroup.com> for the bug report.)
+
+0.7.1
+- Comments management page now shows names, emails, and comments. (Thanks to
+	Paul Argoud <paul.argoud@gmail.com> for the bug report.)
+
+0.7.0
+- Added an option to show the title of a post but hide its body text. (Thanks
+	to Martin <macsofthard@au-trescols.net> for the feature suggestion.)
+- Fixed a bug where static pages would be hidden. (Thanks to Keith for the bug
+	report in the 0.6.1 post comments.)
+
+0.6.1
+- Fixed a bug where categories with special characters like "'" would
+	incorrectly have a padlock on them, even if they aren't protected. (Thanks
+	to Kyle Kosup <kylekosup@earthlink.net> for the bug report.)
+- Fixed pagination bugs, so that if posts are hidden, posts from later pages
+	will be pulled up to the current page to replace them.
+
+0.6.0
+- Added an option to reveal the title and links for a hidden post in the
+	feeds. (Thanks to Robert Sandie <rsandie@viddler.com> for the suggestion.)
+
+0.5.3
+- Fixed a problem where per-user category settings still weren't being set
+	properly. Hopefully it's fixed for good now. (Thanks to Mark
+	<mark@paragondesign.co.nz> for the bug report.)
+- Fixed a problem where pages would be hidden if the default category was
+	hidden. (Thanks to Joost Dijkstra <jmmdijkstra@yahoo.co.uk> for the original
+	bug report, and to Mark <mark@paragondesign.co.nz> for finding the source of
+	the problem.)
+
+0.5.2
+- Fixed some warnings created in the last release. (Thanks to Lane Robinson
+	<webmaster@mybeausejour.com> for the bug report.)
+
+0.5.1
+- Fixed a bug where changes to category access on a per-user basis would
+	sometimes not be reflected in the updated page. (Thanks to John Geddes
+	<john.geddes@port.ac.uk> for the bug report.)
+- Added support for preventing comments for hidden posts from showing up in
+	the comments RSS. (Thanks to Super Ann <tech@superann.com> for the bug
+	report.)
+
+0.5.0 (Wed Apr 5 2006)
+- People with the category management capability (typically Editors and
+	Administrators) now have access to all categories regardless of visibility
+	settings. (Thanks to Paul Magnowski <p.magnowski@plum.com.pl> for the
+	feature suggestion.)
+- New option to show a post if the user can view any of the categories, rather
+	than all of them. (Thanks to Paul Magnowski <p.magnowski@plum.com.pl> for
+	the feature suggestion.)
+- A post will now be hidden if its category, OR ANY PARENT CATEGORY is
+	protected. (Thanks to Paul Magnowski <p.magnowski@plum.com.pl> for the
+	feature suggestion and patch.)
+- Fixed a bug where multiple categories would not be excluded--just one. (Many
+	thanks to Pierre Lauvergnier <gooddwarf@gmail.com> for the bug report and
+	fix.)
+- If a person selects categories that they do not have access to when editing
+	or writing a post, these categories are removed. If no categories remain,
+	the post is put into the uncategorized category and not published. (Thanks
+	to David Katz <davidk@slic.com> for the patch.)
+- Added check all and uncheck all buttons to the categories checkboxes on the
+	options page. (Thanks to David Katz <davidk@slic.com> for the patch.)
+
+0.4.2:
+- Instructions now make it clear that the plugin directory must be
+	'category-access'. (Thanks to Brian Schwartz <brian.schwartz@yahoo.com> for
+	the bug report.)
+- Fixed a bug that would cause an SQL error message to appear. (Thanks to
+	pierre@lauvergnier.com for the bug report.)
+
+0.4.1:
+- Added support for filtering navigational links. (Thanks to Livio Federspiel
+  for the bug report.)
+
+0.4.0:
+- Updated to avoid using levels, which are no longer supported by Wordpress
+  2.0.
+- Renamed to reflect this change
+- Moved per-user configuration to the user profile page
+
+0.3.3:
+- Added GPL license file.
+
+0.3.2:
+- User level on categories is now superscript instead of parentheses.
+
+0.3.1:
+- Fixed a bug where the "reset all options" button wouldn't properly display
+  the cleared checkboxes.
+- Moved the update button closer to the post message textbox
+- Suboptions are now disabled if the top-level "show private messages" and
+  "show private categories" checkboxes are cleared.
+- Fixed a bug where the category list would not be processed correctly.
+
+0.3.0:
+- Added management page interface.
+- Fixed a bug where the user level would not be shown in the category list.
+- Created a directory for the plugin, and moved changelog to CHANGES.txt and
+  other notes to README.txt
+- Moved the padlock into the plugin directory for easier installation.
+
+0.2.1:
+- Changes to the layout of the padlock icon and default settings.
+
+0.2.0:
+- New option to remove categories from the category list for which the user
+  does not have permission to view.
+- The plugin now provides more fine control over the display of padlocks and
+  user level requirements in both the posts list and the categories list.
+- Hiding categories requires Wordpress 1.5.2.
+
+- 0.1.3: (First?) public version
